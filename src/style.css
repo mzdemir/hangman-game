@@ -43,10 +43,22 @@
 
 .bg-app {
 	position: relative;
-	background-image: url(./assets/images/background-mobile.svg);
+	background-image: url(../assets/images/background-mobile.svg);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+@media (min-width: 48rem) {
+	.bg-app {
+		background-image: url(../assets/images/background-tablet.svg);
+	}
+}
+
+@media (min-width: 64rem) {
+	.bg-app {
+		background-image: url(../assets/images/background-desktop.svg);
+	}
 }
 
 .bg-app::before {
