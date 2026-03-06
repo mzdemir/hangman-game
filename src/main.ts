@@ -136,9 +136,9 @@ const categories = await getCategories()
 const mainMenu = `
   <main aria-live="assertive" class="bg-[image:var(--gradient-1)] max-w-[90rem] rounded-[3rem] shadow-(--shadow-1) relative w-[20.25rem] md:w-[37rem] h-[30rem] mbs-[3rem] sm:mbs-[5rem]">
     <div class="flex flex-col items-center gap-[3.625rem]  absolute top-[-3.5rem] sm:top-[-5.5rem] bottom-0 left-[2rem] right-[2rem]">
-      <img src="/assets/images/logo.svg" alt="The Hangman Game Logo">
+      <img src="/images/logo.svg" alt="The Hangman Game Logo">
       <button data-action="start-game" class="size-[10rem] flex items-center justify-center bg-[image:var(--gradient-3)] rounded-full shadow-(--shadow-2) cursor-pointer" aria-label="Click to start game">
-        <img class="size-[3.25rem]" src="/assets/images/icon-play.svg" aria-hidden="true">
+        <img class="size-[3.25rem]" src="/images/icon-play.svg" aria-hidden="true">
       </button>
       <button data-action="how-to-play" class="text-preset-8 bg-(--blue-600) text-(--neutral-0) p-[0.75rem] w-full rounded-full shadow-(--shadow-3) cursor-pointer mx-[4rem] max-w-[16.25rem]">
         HOW TO PLAY
@@ -150,7 +150,7 @@ const mainMenu = `
 const header = (title: string) => `
   <header class="flex justify-between items-center pbe-[5rem] w-full">
     <button data-action="go-back" class="size-[2.5rem] md:size-[4rem] bg-[image:var(--gradient-3)] rounded-full flex justify-center items-center" aria-label="Click to return to main menu">
-      <img class="size-[1.125rem] md:size-[1.75rem]" src="/assets/images/icon-back.svg" aria-hidden="true">
+      <img class="size-[1.125rem] md:size-[1.75rem]" src="/images/icon-back.svg" aria-hidden="true">
     </button>
     <h1 class="text-(length:--fs-6)/(--lh) tracking-(--ls-6) md:text-(length:--fs-2)/(--lh) md:tracking-(--ls-1) text-border uppercase md:m-auto" data-text="${title}">${title}</h1>
   </header>
@@ -217,7 +217,7 @@ const inGame = (category: string | undefined) => `
     <header class="flex justify-between items-center pbe-[5rem] w-full">
       <div class="flex items-center gap-[1rem] md:gap-[2rem]">
         <button data-action="pause-game" class="size-[2.5rem] md:size-[4rem] p-[.75rem] md:p-[1.25rem] bg-[image:var(--gradient-3)] rounded-full" aria-label="Click to open menu">
-          <img class="" src="/assets/images/icon-menu.svg" aria-hidden="true">
+          <img class="" src="/images/icon-menu.svg" aria-hidden="true">
         </button>
         <h1 class="text-(length:--fs-7)/(--lh) tracking-(--ls-7) md:text-(length:--fs-6) tracking-(--ls-6) text-(--neutral-0) uppercase">${category}</h1>
       </div>
@@ -225,7 +225,7 @@ const inGame = (category: string | undefined) => `
         <div class="flex items-center justify-start h-[1rem] w-[3.5rem] md:w-[10rem] md:h-[2rem] bg-(--neutral-0) rounded-full p-[.25rem] md:p-[.625rem]">
           <div class="health-bar w-full h-[0.5rem] md:h-[.75rem] bg-(--indigo-600) rounded-full transition-all duration-300"></div>
         </div>
-        <img class="size-[1.5rem] md:size-[3rem]" src="/assets/images/icon-heart.svg" aria-hidden="true">
+        <img class="size-[1.5rem] md:size-[3rem]" src="/images/icon-heart.svg" aria-hidden="true">
       </div>
     </header>
 
